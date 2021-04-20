@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #1c2842;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="302.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <TextField fx:id="commandField" layoutX="276.0" layoutY="139.0" prefHeight="25.0" prefWidth="163.0" promptText="write your command here..." style="-fx-background-color: #fafafa; -fx-border-color: #000;" />
+            <Label layoutX="246.0" layoutY="104.0" prefHeight="25.0" prefWidth="358.0" style="-fx-background-color: #fafafa;" text="Write command below">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+        <Label layoutX="86.0" layoutY="21.0" text="My Cloud Storage" textFill="#fcfcfc">
+            <font>
+                <Font name="Century Gothic" size="60.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
