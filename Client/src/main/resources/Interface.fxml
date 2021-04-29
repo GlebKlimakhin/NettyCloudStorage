@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #1c2842;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="302.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <Label layoutX="11.0" layoutY="10.0" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: #fafafa;" text="Download File" textAlignment="JUSTIFY" textFill="#1c2842">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="uploadButton" layoutX="513.0" layoutY="251.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: #1c2842; -fx-border-style: groove;" text="Upload" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="499.0" layoutY="10.0" prefHeight="25.0" prefWidth="187.0" text="Upload File To Server" textAlignment="CENTER" textFill="#1c2842">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="downloadButton" layoutX="23.0" layoutY="250.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: #1c2842; -fx-border-style: groove;" text="Download" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="serverFilesListView" layoutX="11.0" layoutY="38.0" prefHeight="207.0" prefWidth="187.0" />
+            <ListView fx:id="clientFilesListView" layoutX="501.0" layoutY="35.0" prefHeight="213.0" prefWidth="187.0" style="-fx-background-color: #;" />
+            <Button layoutX="317.0" layoutY="110.0" mnemonicParsing="false" text="refresh" />
+         </children></AnchorPane>
+        <Label layoutX="86.0" layoutY="21.0" text="My Cloud Storage" textFill="#fcfcfc">
+            <font>
+                <Font name="Century Gothic" size="60.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
