@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #1c2842;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuthWindowController">
+   <children>
+      <AnchorPane layoutY="98.0" prefHeight="302.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <Button fx:id="signInButton" layoutX="275.0" layoutY="241.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #3F57D2; -fx-border-style: groove;" text="Sign In">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="signInLogin" layoutX="191.0" layoutY="85.0" prefHeight="28.0" prefWidth="315.0" promptText="Login" style="-fx-background-color: #fafafa; -fx-border-color: silver;">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="signInPassword" layoutX="191.0" layoutY="172.0" prefHeight="28.0" prefWidth="315.0" promptText="Password" style="-fx-background-color: #fafafa; -fx-border-color: silver;">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="241.0" layoutY="14.0" style="-fx-background-color: #fafafa;" text="Authorization" textFill="#1c2842">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="86.0" layoutY="21.0" text="My Cloud Storage" textFill="#fcfcfc">
+         <font>
+            <Font name="Century Gothic" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="regButton" layoutX="550.0" layoutY="-4.0" mnemonicParsing="false" onAction="#toSignUpWindow" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #3F57D2;" text="Sign Up">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
