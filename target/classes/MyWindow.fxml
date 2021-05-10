@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <Label alignment="CENTER" prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: #00bfff;" text="My Cloud Storage" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Century Gothic Italic" size="28.0" />
+         </font>
+      </Label>
+      <HBox fx:id="authPanel" prefHeight="187.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="292.0" style="-fx-background-color: fadadd;">
+               <children>
+                  <Label layoutX="119.0" layoutY="-1.0" text="Log in">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="authLoginField" layoutX="72.0" layoutY="29.0" promptText="login" />
+                  <PasswordField fx:id="authPasswordField" layoutX="72.0" layoutY="64.0" promptText="password" />
+                  <Button fx:id="loginButton" layoutX="85.0" layoutY="94.0" mnemonicParsing="false" onAction="#tryToAuth" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #00bfff;" text="Log in">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="100.0" prefWidth="308.0" style="-fx-background-color: fadadd;">
+               <children>
+                  <Label layoutX="120.0" layoutY="-1.0" text="Sign up">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="regLoginField" layoutX="80.0" layoutY="29.0" promptText="login" />
+                  <PasswordField fx:id="regPasswordField" layoutX="80.0" layoutY="64.0" promptText="password" />
+                  <PasswordField fx:id="repeatPasswordField" layoutX="80.0" layoutY="101.0" promptText="repeat password" />
+                  <Button fx:id="regButton" layoutX="111.0" layoutY="136.0" mnemonicParsing="false" onAction="#tryToReg" style="-fx-background-color: #00bfff;" text="Sign up">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox fx:id="interfacePanel" prefHeight="371.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="371.0" prefWidth="297.0">
+               <children>
+                  <Label layoutX="121.0" layoutY="14.0" text="Client">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="clientFileListView" layoutX="46.0" layoutY="44.0" prefHeight="274.0" prefWidth="200.0" />
+                  <Button fx:id="uploadButton" layoutX="46.0" layoutY="318.0" mnemonicParsing="false" onAction="#uploadToServer" prefHeight="49.0" prefWidth="67.0" text="Upload" />
+                  <Button fx:id="deleteFromClientButton" layoutX="113.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteClientFile" prefHeight="49.0" prefWidth="67.0" text="Delete" />
+                  <Button fx:id="exitButton" layoutX="180.0" layoutY="318.0" mnemonicParsing="false" onAction="#closeConnection" prefHeight="49.0" prefWidth="67.0" text="Exit" />
+               </children>
+            </Pane>
+            <Pane prefHeight="371.0" prefWidth="303.0">
+               <children>
+                  <Label layoutX="138.0" layoutY="14.0" text="Server">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="serverFileListView" layoutX="66.0" layoutY="44.0" prefHeight="274.0" prefWidth="200.0" />
+                  <Button fx:id="downloadButton" layoutX="66.0" layoutY="318.0" mnemonicParsing="false" onAction="#download" prefHeight="49.0" prefWidth="103.0" text="Download" />
+                  <Button fx:id="deleteFromServerButton" layoutX="166.0" layoutY="318.0" mnemonicParsing="false" onAction="#deleteFromServer" prefHeight="49.0" prefWidth="103.0" text="Delete" />
+               </children>
+            </Pane>
+         </children></HBox>
+   </children>
+</VBox>
